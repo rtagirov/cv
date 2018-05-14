@@ -77,16 +77,16 @@
 % All of the below lines must be filled out
 %-------------------------------------------------------------------------------
 % The company being applied to
-\recipient
-{Dr. James Geach}
-{University of Hertfordshire\\
- Center for Astrophysics Research\\
- College Lane\\
- Hatfield AL10 9AB, United Kingdom}
+%\recipient
+%{Dr. James Geach}
+%{University of Hertfordshire\\
+% Center for Astrophysics Research\\
+% College Lane\\
+% Hatfield AL10 9AB, United Kingdom}
 % The date on the letter, default is the date of compilation
-\letterdate{\today}
+%\letterdate{\today}
 % The title of the letter
-%\lettertitle{Job Application for Innovation Fellow in Astrosense Project (job refence 016197)}
+%\lettertitle{Research Summary}
 % How the letter is opened
 \letteropening{Dear Dr. Geach,}
 % How the letter is closed
@@ -107,18 +107,18 @@
 \makecvfooter
 %  {\today}
   {}
-  {Rinat Tagirov~~~·~~~Cover Letter}
+  {Rinat Tagirov~~~·~~~Research Summary}
   {}
 
 % Print the title with above letter informations
-\makelettertitle
+%\makelettertitle
 
 %-------------------------------------------------------------------------------
 %	LETTER CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-Please accept my application for the Innovation Fellow position in the ``Astrosense'' Project at the University of Hertfordshire.
+%Please accept my application for the Innovation Fellow position in the ``Astrosense'' Project at the University of Hertfordshire.
 
 I am currently a research associate with the Astrophysics Group at Imperial College London
 working in the field of NLTE radiative transfer.
@@ -152,22 +152,38 @@ combined with the ability of the current 3D-MHD models to capture the dynamics o
 I have made NESSY capable of switching between NTLE and LTE radiative transfer regimes for different chemical elements,
 and now I am working on merging the NLTE block of NESSY with the spectral synthesis block of the LTE radiative transfer code ATLAS9.
 The objective of these projects is to make NESSY fast enough to handle the computationally taxing 1.5D calculations.
+
+My second project is devoted to NLTE validation of the Spectral And Total Irradiance REconstruction (SATIRE)
+model with the NESSY code.
+SATIRE is currently one of the most prominent and successful solar variability models.
+However, up until now it has been based on the ATLAS9 radiative transfer code, which operates under the LTE assumption.
+The LTE radiative transfer approach gives erroneous solar spectrum below 200 nm and therefore the SATIRE output had to be
+empirically corrected at the corresponding wavelengths using available solar spectrum observations.
+In this connection, the SATIRE model has been criticized.
+The purpose of my project is to develop a version of SATIRE based upon the NLTE solar spectrum calculated with NESSY,
+that is to make it independent of observations, and show that the empirical adjustment has been done correctly.
+
 My work has been accompanied by teaching, which gives me an opportunity to explore other areas of physics,
 and by frequent collaboration visits to Max-Planck Institute for Solar System Research,
 where I contribute to the efforts of the ERC research group SOLVe (Connecting Solar and Stellar Variabilities)
 led by my former PhD supervisor Dr. Alexander Shapiro.
 
-My current projects should be brought to completion by the end of the upcoming summer.
-I have been working in the field of stellar radiative transfer and variability for quite a long time and I am looking
-for an opportunity to apply myself in another area of astrophysics.
-As a specialist in NLTE stellar radiative transfer calculations I have some experience in using spectroscopic data sets, albeit not very large.
-That being said, I have acquired solid programming skills and I am always open to learn new ones, which makes me confident that
-I will be successful in expanding my data-handling abilities.
+%My current projects should be brought to completion by the end of the upcoming summer.
+%I have been working in the field of stellar radiative transfer and variability for quite a long time and I am looking
+%for an opportunity to apply myself in another area of astrophysics.
+%I do not have any experience with CUDA or Tensorflow, but I have some experience with imaging datasets
+%coming from my last year project with students, which
+%had to do with the observational side of solar variability modeling
+%based on solar disk images (the project guide is available on my LinkedIn profile).
+%Over the course of my work with NLTE stellar radiative transfer calculations I have acquired programming skills
+%in Fortran and Python, but I have not had an opportunity to learn C or C++ languages.
+%That being said, I am always open to learning, and so far my attempts to learn new skills have been fruitful,
+%therefore I have a reason to believe that I will be successful in expanding my coding and data-handling abilities.
 
-I look forward to discussing the Innovation Fellow position in the ``Astrosense'' project with you at an interview.
+%I look forward to discussing the Innovation Fellow position in the ``Astrosense'' project with you at an interview.
 
-Sincerely,\\
-Rinat Tagirov
+%Sincerely,\\
+%Rinat Tagirov
 
 \end{cvletter}
 

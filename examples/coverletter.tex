@@ -84,9 +84,9 @@
 % College Lane\\
 % Hatfield AL10 9AB, United Kingdom}
 % The date on the letter, default is the date of compilation
-%\letterdate{\today}
+\letterdate{\today}
 % The title of the letter
-%\lettertitle{Research Summary}
+\lettertitle{Research Summary}
 % How the letter is opened
 \letteropening{Dear Dr. Geach,}
 % How the letter is closed
@@ -107,7 +107,8 @@
 \makecvfooter
 %  {\today}
   {}
-  {Rinat Tagirov~~~·~~~Research Summary}
+%  {Rinat Tagirov~~~·~~~Research Summary}
+  {Rinat Tagirov~~~·~~~Cover Letter}
   {}
 
 % Print the title with above letter informations
@@ -118,7 +119,7 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-%Please accept my application for the Innovation Fellow position in the ``Astrosense'' Project at the University of Hertfordshire.
+Dear Prof. Wheatland,
 
 I am currently a research associate with the Astrophysics Group at Imperial College London
 working in the field of NLTE radiative transfer.
@@ -129,7 +130,7 @@ and commenced my PhD studies at Physical-Meteorological Observatory Davos,
 where the code had been used for solar irradiance calculations.
 The purpose of my project was to apply the code for understanding the connection between the UV and radio variabilities of the solar spectrum.
 In order to achieve this goal, the code had to be upgraded and tested.
-Hence, my PhD dissertation was naturally divided into three parts: code development, its verification and application.
+Hence, my PhD dissertation (available at https://www.linkedin.com/in/rinat-tagirov-7628b790) was naturally divided into three parts: code development, its verification and application.
 
 The first part was devoted to upgrading the code's NLTE block.
 NESSY was originally created for synthesizing the spectra emergent from Wolf-Rayet stars and its NLTE scheme
@@ -157,33 +158,35 @@ My second project is devoted to NLTE validation of the Spectral And Total Irradi
 model with the NESSY code.
 SATIRE is currently one of the most prominent and successful solar variability models.
 However, up until now it has been based on the ATLAS9 radiative transfer code, which operates under the LTE assumption.
-The LTE radiative transfer approach gives erroneous solar spectrum below 200 nm and therefore the SATIRE output had to be
+The LTE radiative transfer approach gives erroneous solar spectrum below 300 nm and therefore the SATIRE output had to be
 empirically corrected at the corresponding wavelengths using available solar spectrum observations.
 In this connection, the SATIRE model has been criticized.
 The purpose of my project is to develop a version of SATIRE based upon the NLTE solar spectrum calculated with NESSY,
 that is to make it independent of observations, and show that the empirical adjustment has been done correctly.
+The paper describing the results of this work is about to be submitted to Astronomy \& Astrophysics.
 
 My work has been accompanied by teaching, which gives me an opportunity to explore other areas of physics,
 and by frequent collaboration visits to Max-Planck Institute for Solar System Research,
 where I contribute to the efforts of the ERC research group SOLVe (Connecting Solar and Stellar Variabilities)
 led by my former PhD supervisor Dr. Alexander Shapiro.
 
-%My current projects should be brought to completion by the end of the upcoming summer.
-%I have been working in the field of stellar radiative transfer and variability for quite a long time and I am looking
-%for an opportunity to apply myself in another area of astrophysics.
-%I do not have any experience with CUDA or Tensorflow, but I have some experience with imaging datasets
-%coming from my last year project with students, which
-%had to do with the observational side of solar variability modeling
-%based on solar disk images (the project guide is available on my LinkedIn profile).
-%Over the course of my work with NLTE stellar radiative transfer calculations I have acquired programming skills
-%in Fortran and Python, but I have not had an opportunity to learn C or C++ languages.
-%That being said, I am always open to learning, and so far my attempts to learn new skills have been fruitful,
-%therefore I have a reason to believe that I will be successful in expanding my coding and data-handling abilities.
+My current projects should be brought to completion by the end of the upcoming summer.
+I have been working in the field of stellar radiative transfer and variability for quite a long time and I am looking
+for an opportunity to apply myself in another area of astrophysics.
+Over the course of the work on my PhD dissertation and subsequent work at Imperial College London I have acquired programming skills
+in Fortran, Python, IDL and scripting language Bash (https://github.com/rtagirov) as well as data analysis and visualization skills.
+I also have experience with imaging datasets
+coming from my last year project with students, which
+had to do with the observational side of solar variability modeling
+based on solar disk images.
+The guide for this project is available on my LinkedIn profile along with the description
+of two computational Python projects I have supervised this year
+(modeling free-for-all airplane boarding process using statistical mechanics and
+modeling rainbow formation),
+which are publicly accessible on GitHub.
 
-%I look forward to discussing the Innovation Fellow position in the ``Astrosense'' project with you at an interview.
-
-%Sincerely,\\
-%Rinat Tagirov
+Sincerely,\\
+Rinat Tagirov
 
 \end{cvletter}
 
